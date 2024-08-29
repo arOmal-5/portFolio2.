@@ -8,13 +8,13 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const Projects = () => {
   return (
     <>
-      <div className="max-w-sm p-6 shadow-2xl bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+      <div className="max-w-sm p-4 shadow-2xl bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 w-full">
         {/* Work Experience Section */}
-        <div className="">
+        <div className="w-full">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white">My Projects</h3>
 
           {/* Grid layout for expert areas */}
-          <div className="relative flex flex-col mt-4 gap-2">
+          <div className="relative flex flex-col mt-4 gap-4 w-full">
             <div className="relative">
               <img src={acProject} alt="Project" className="w-full h-auto rounded-lg" />
 

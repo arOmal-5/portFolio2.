@@ -34,7 +34,7 @@ const MainProfile = () => {
     <>
 
    
-<div className="max-w-sm w-full bg-white border shadow-2xl border-gray-200 rounded-xl  dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center p-5  mx-auto">
+<div className="max-w-sm w-full bg-white border shadow-2xl border-gray-200 rounded-xl  dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center p-5  ">
 
 <h5 className="mb-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">AROMAL S 👋 </h5>
   <div className="flex flex-col sm:flex-row gap-4 w-full items-center">
@@ -71,12 +71,13 @@ const MainProfile = () => {
     </div>
   </div>
   
-  <p className="mt-3 text-center font-normal text-gray-700 dark:text-gray-400">
+  <p className="mt-3 text-start font-normal text-gray-700 dark:text-gray-400">
   A Passionate <strong className="font-bold">Full Stack Developer</strong> 🖥️ having <strong className="font-bold">1 year</strong> of experience in 20+ Technologies so far.
+  I specialize in building responsive and dynamic web applications using modern technologies using React, Node.js, and MongoDB. With a passion for continuous learning, I have successfully implemented several projects that integrate complex backend functionalities with intuitive front-end designs.
 </p>
 
 <p className="mt-3 text-start font-normal  text-gray-700 dark:text-gray-400">
-  I specialize in building responsive and dynamic web applications using modern technologies using React, Node.js, and MongoDB. With a passion for continuous learning, I have successfully implemented several projects that integrate complex backend functionalities with intuitive front-end designs.
+ 
 </p>
 
 

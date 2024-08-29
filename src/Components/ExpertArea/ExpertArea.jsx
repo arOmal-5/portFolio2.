@@ -24,7 +24,7 @@ const ExpertArea = () => {
             <img
               src={reactIcon} // Replace with actual logo path
               alt="Expert Logo 1"
-              className="w-16 h-16 mb-2"
+              className="w-16 h-14 mb-2"
             />
             <p className="text-center text-gray-900 dark:text-white">React JS</p>
           </div>
@@ -33,7 +33,7 @@ const ExpertArea = () => {
             <img
               src={node} // Replace with actual logo path
               alt="Expert Logo 1"
-              className="w-16 h-16 mb-2"
+              className="w-16 h-14 mb-2"
             />
             <p className="text-center text-gray-900 dark:text-white">Node JS</p>
           </div>

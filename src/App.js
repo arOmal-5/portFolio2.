@@ -13,7 +13,7 @@ function App() {
   return (
 
    
-       <div className={`${theme === 'light' ? 'App w-full  overflow-auto' :'Darkapp w-full  overflow-auto'}`}>
+       <div className={`${theme === 'light' ? 'App w-full  overflow-auto ' :'Darkapp w-full  overflow-auto'}`}>
       <LayOut/>
  
     </div>

@@ -5,7 +5,7 @@ import { GrServices } from 'react-icons/gr';
 import { BsPersonWorkspace } from 'react-icons/bs';
 import { MdOutlineChat, MdConnectingAirports } from 'react-icons/md';
 import { TbAppsFilled } from "react-icons/tb";
-import './navBar.css'
+import './navBar.css';
 import ThemeContext from '../Context/ThemeContext';
 
 const Navbar = () => {
@@ -13,9 +13,10 @@ const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <nav className={`sm:right-14 sm:mr-3 fixed top-2 right-0 z-20 shadow-2xl border-b rounded-2xl w-full md:w-11/12 ${
-      theme === 'light' ? 'sm:right-14 sm:mr-3 bg-white border-gray-200' : 'bg-gray-900 border-gray-600'
-    }`}
+    <nav
+      className={`sm:right-14 sm:mr-3 sticky top-0 z-50 shadow-2xl border-b rounded-2xl w-full md:w-auto ${
+        theme === 'light' ? 'bg-white border-gray-200' : 'bg-gray-900 border-gray-600'
+      }`}
     >
       <div className="flex flex-wrap items-center justify-between mx-auto p-5">
         <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -24,7 +25,7 @@ const Navbar = () => {
         </a>
         
         <div className="flex gap-4 justify-between items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <label htmlFor="theme-switch" className="switch">
+          <label htmlFor="theme-switch" className="switch">
             <input
               id="theme-switch"
               type="checkbox"
@@ -38,6 +39,7 @@ const Navbar = () => {
           <button type="button" className="text-white hidden bg-black hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:flex gap-2 justify-center items-center">
             <MdConnectingAirports className="text-xl"/> Let's Talk
           </button>
+
           {/* Hamburger icon for mobile */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -56,7 +58,7 @@ const Navbar = () => {
         
         {/* Mobile dropdown menu */}
         <div className={`flex flex-col items-center ${isOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
             <li>
               <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 flex gap-1 justify-center items-center" aria-current="page">
                 <TbSmartHome/> Home
