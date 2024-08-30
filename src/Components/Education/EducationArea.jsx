@@ -50,7 +50,7 @@ const EducationArea = () => {
               Diploma in Mechanical Engineering
             </h4>
             <p className="text-sm font-medium text-gray-700 dark:text-gray-400">
-              First class with distinction
+              Sree Narayana Polytechnic College,Kollam
             </p>
           </div>
         </div>
